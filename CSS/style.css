@@ -1,0 +1,216 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Baloo Bhai 2', cursive;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* Navigation Menu  */
+#navbar {
+  position: relative;
+  display: flex;
+}
+nav::before {
+  content: '';
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.5;
+  z-index: -1;
+}
+#navbar ul {
+  display: flex;
+  margin: 2px 8px;
+  align-items: center;
+  text-align: center;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  color: white;
+  padding: 3px 15px;
+  display: block;
+  /* border:2px solid white; */
+
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+#logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin: 3px 8px;
+}
+/* Home Sections */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 350px;
+}
+.main {
+  margin: 50px;
+}
+#home p {
+  padding: 10px 20px;
+  text-align: center;
+}
+#home::before {
+  content: '';
+  position: absolute;
+  background: url('../images/pexels-ella-olsson-1640777.jpg')
+    no-repeat center/cover;
+  z-index: -1;
+  height: 480px;
+  width: 100%;
+  opacity: 0.55;
+}
+
+/* services Section      */
+#Services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 480px;
+  align-items: center;
+  position: relative;
+  top: 0px;
+  margin: 0px 0px;
+}
+.container {
+  display: flex;
+  margin: 15px;
+}
+
+#Services img {
+  height: 100px;
+  width: 100px;
+}
+.box {
+  border: 2px solid brown;
+  padding: 10px 20px;
+  margin: 0px 5px;
+  height: 200px;
+  width: 380px;
+  text-align: center;
+  border-radius: 10px;
+}
+.box p {
+  font-size: 0.8rem;
+}
+/* Clients Section */
+#clients {
+  height: 400px;
+  width: 100%;
+}
+#clients::before {
+  content: '';
+  position: absolute;
+  background: url('../images/clientsbg.jpg');
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.client-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 320px;
+  width: 100%;
+}
+
+.client-logos img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50px;
+}
+
+/* Contact Us Section */
+#contact {
+  height: 400px;
+  width: 100%;
+  margin-top: 30px;
+}
+#contact::before {
+  content: '';
+  background: url('../images/contactbg2.jpg');
+  height: 83%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: start;
+  /* height:250px; */
+}
+.form-group div {
+  font-size: 1.2rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* font-family: 'Baloo Bhai 2', cursive; */
+  font-family: 'Bree Serif', serif;
+}
+
+.form-group button {
+  width: 50%;
+  margin-top: 15px;
+}
+div input,
+div textarea {
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 5px;
+  resize: none;
+  font-size: 1rem;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 70px;
+  padding-top: 20px;
+  position: static;
+  margin-top: 50px;
+}
+/* Utility Classes  */
+.h-primary {
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: 'Bree Serif', serif;
+}
+
+.btn {
+  background-color: tomato;
+  broder: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 3px 6px;
+  color: white;
+  font-size: 1rem;
+}
